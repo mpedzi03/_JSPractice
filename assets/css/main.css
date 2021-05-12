@@ -1,0 +1,19 @@
+header > h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: yellow;
+}
+
+.grid-container > div {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 10px;
+}
