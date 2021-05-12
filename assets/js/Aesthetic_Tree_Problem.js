@@ -26,7 +26,7 @@ class AestheticTreeProblem {
 
     for (let i = 0; i < arrLength; i++) {
       if (i !== indexToDelete) {
-        newArray[tempI++] = A[i]
+        newArray[tempI++] = arr[i]
       }
     }
 
@@ -45,7 +45,7 @@ class AestheticTreeProblem {
         }
       } else {
         if (increaseCt === 1) {
-          if (i % 2 == 1 && arr[i] > arr[i - 1]){
+          if (i % 2 == 1 && arr[i] > arr[i-1]){
           } else if (i % 2 == 0 && arr[i] < arr[i - 1]) {
           } else {
             return false
@@ -59,7 +59,9 @@ class AestheticTreeProblem {
         }
       }
     }
+
+    return true
   }
 }
-let firstName = 1
-export {AestheticTreeProblem, firstName}
+
+export default AestheticTreeProblem
