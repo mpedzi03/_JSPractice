@@ -5,7 +5,26 @@ let obj = new AestheticTreeProblem([1,3,4,1])
 let result = obj.performTreeCheck()
 
 document.getElementById('aesthetic-tree-input').addEventListener('keypress', aestheticTreeInput)
-document.getElementById('aesthetic-tree-button').addEventListener('click', aestheticTreeStart)
+document.getElementById('aesthetic-tree-button-run').addEventListener('click', aestheticTreeStart)
+document.getElementById('aesthetic-tree-button-description').addEventListener('click', displayModal)
+document.getElementsByClassName('close')[0].addEventListener('click', closeModal)
+
+let modal = document.getElementById('myModal')
+
+function displayModal() {
+  modal.style.display = 'block'
+}
+
+function closeModal() {
+  modal.style.display = 'none'
+}
+
+window.onclick = function(event) {
+  console.log(event.target)
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 function aestheticTreeInput(e) {
   const numCommaRegex = /^\d|\,$/g

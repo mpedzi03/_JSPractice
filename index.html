@@ -15,16 +15,20 @@
   </header>
   <div class="grid-container">
     <div>
-      <h3>Aesthetic Tree Problem <button id="aesthetic-tree-button">Run</button></h3>
-      <label for="aesthetic-tree">Input</label>
-      <input type="text" id="aesthetic-tree-input">
-
-      <label for="aesthetic-tree-result">Result</label>
-      <input type="text" id="aesthetic-tree-result">
+      <h3>Aesthetic Tree Problem <button id="aesthetic-tree-button-run" class="run-button">Run</button></h3>
+      <button id="aesthetic-tree-button-description" class="description-button">Description</button>
+      <div class="input-group">
+        <label for="aesthetic-tree">Input</label>
+        <input type="text" id="aesthetic-tree-input">
+      </div>
+      <div class="input-group">
+        <label for="aesthetic-tree-result">Result</label>
+        <input type="text" id="aesthetic-tree-result" readonly>
+      </div>
     </div>
     <div>2</div>
     <div>3</div>
-    <div>4</div>
+    <!-- <div>4</div>
     <div>5</div>
     <div>6</div>
     <div>7</div>
@@ -32,7 +36,17 @@
     <div>9</div>
     <div>10</div>
     <div>11</div>
-    <div>12</div>
+    <div>12</div> -->
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
   </div>
 </body>
 </html>
